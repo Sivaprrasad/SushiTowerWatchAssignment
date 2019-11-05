@@ -54,6 +54,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
            
         }
     }
+    
     @IBAction func buttonRightPressed() {
         if (WCSession.default.isReachable == true) {
 
@@ -73,17 +74,25 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         WCSession.default.sendMessage(message, replyHandler:nil)
         }
         
-        }
+    }
         
+    var gamePause = false
+    
     @IBAction func buttonPausePressed() {
-        if (WCSession.default.isReachable == true) {
-
+        if(gamePause == true){
             let message = ["name":"pause"] as [String : Any]
-            
+                // Send the message
+            WCSession.default.sendMessage(message, replyHandler:nil)
+        }
+        else if(gamePause == false){
+        let message = ["name":"play"] as [String : Any]
             // Send the message
         WCSession.default.sendMessage(message, replyHandler:nil)
+        gamePause = true
         }
-        
+            
     }
-    
+        
 }
+    
+

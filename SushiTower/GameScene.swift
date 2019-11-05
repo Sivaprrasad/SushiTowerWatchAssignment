@@ -30,6 +30,7 @@ class GameScene: SKScene, WCSessionDelegate {
         // Get the "name" key out of the dictionary
         // and show it in the label
         let name = message["name"] as! String
+        
         if(name == "left"){
             print("TAP LEFT")
             // 2. person clicked left, so move cat left
@@ -43,8 +44,6 @@ class GameScene: SKScene, WCSessionDelegate {
             self.catPosition = "left"
             
             self.animateSushi()
-            
-            
         }
         else if(name == "right"){
             print("TAP RIGHT")
@@ -60,7 +59,12 @@ class GameScene: SKScene, WCSessionDelegate {
             
             self.animateSushi()
             
-            
+        }
+        else if(name == "pause"){
+            gamePaused = true
+        }
+        else if(name == "play"){
+            gamePaused = false
         }
     }
     
@@ -70,6 +74,7 @@ class GameScene: SKScene, WCSessionDelegate {
     // Make a tower
     var sushiTower:[SKSpriteNode] = []
     let SUSHI_PIECE_GAP:CGFloat = 80
+    var gamePaused = false
 
     // Make chopsticks
     var chopstickGraphicsArray:[SKSpriteNode] = []
