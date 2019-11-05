@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0571020E2215F1400064C3E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571020D2215F1400064C3E1 /* AppDelegate.swift */; };
+		057102142215F1400064C3E1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057102132215F1400064C3E1 /* GameScene.swift */; };
+		057102162215F1400064C3E1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057102152215F1400064C3E1 /* GameViewController.swift */; };
+		057102192215F1400064C3E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057102172215F1400064C3E1 /* Main.storyboard */; };
+		0571021B2215F1400064C3E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0571021A2215F1400064C3E1 /* Assets.xcassets */; };
+		0571021E2215F1400064C3E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0571021C2215F1400064C3E1 /* LaunchScreen.storyboard */; };
+		05710228221936ED0064C3E1 /* SushiPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05710227221936ED0064C3E1 /* SushiPiece.swift */; };
+		CF224D83237138A500BB49EA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF224D81237138A500BB49EA /* Interface.storyboard */; };
+		CF224D85237138A700BB49EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF224D84237138A700BB49EA /* Assets.xcassets */; };
+		CF224D8C237138A700BB49EA /* SushiTowerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF224D8B237138A700BB49EA /* SushiTowerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF224D91237138A700BB49EA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF224D90237138A700BB49EA /* InterfaceController.swift */; };
+		CF224D93237138A700BB49EA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF224D92237138A700BB49EA /* ExtensionDelegate.swift */; };
+		CF224D95237138A800BB49EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF224D94237138A800BB49EA /* Assets.xcassets */; };
+		CF224D99237138A800BB49EA /* SushiTowerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF224D7F237138A500BB49EA /* SushiTowerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF224D8D237138A700BB49EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 057102022215F13F0064C3E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF224D8A237138A700BB49EA;
+			remoteInfo = "SushiTowerWatch Extension";
+		};
+		CF224D97237138A800BB49EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 057102022215F13F0064C3E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF224D7E237138A500BB49EA;
+			remoteInfo = SushiTowerWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF224D9A237138A800BB49EA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CF224D99237138A800BB49EA /* SushiTowerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF224D9D237138A800BB49EA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF224D8C237138A700BB49EA /* SushiTowerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0571020A2215F1400064C3E1 /* SushiTower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiTower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0571020D2215F1400064C3E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		057102132215F1400064C3E1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		057102152215F1400064C3E1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		057102182215F1400064C3E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0571021A2215F1400064C3E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0571021D2215F1400064C3E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0571021F2215F1400064C3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05710227221936ED0064C3E1 /* SushiPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiPiece.swift; sourceTree = "<group>"; };
+		CF224D7F237138A500BB49EA /* SushiTowerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiTowerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF224D82237138A500BB49EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CF224D84237138A700BB49EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF224D86237138A700BB49EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF224D8B237138A700BB49EA /* SushiTowerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SushiTowerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF224D90237138A700BB49EA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CF224D92237138A700BB49EA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CF224D94237138A800BB49EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF224D96237138A800BB49EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		057102072215F1400064C3E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF224D88237138A700BB49EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		057102012215F13F0064C3E1 = {
+			isa = PBXGroup;
+			children = (
+				0571020C2215F1400064C3E1 /* SushiTower */,
+				CF224D80237138A500BB49EA /* SushiTowerWatch */,
+				CF224D8F237138A700BB49EA /* SushiTowerWatch Extension */,
+				0571020B2215F1400064C3E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0571020B2215F1400064C3E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0571020A2215F1400064C3E1 /* SushiTower.app */,
+				CF224D7F237138A500BB49EA /* SushiTowerWatch.app */,
+				CF224D8B237138A700BB49EA /* SushiTowerWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0571020C2215F1400064C3E1 /* SushiTower */ = {
+			isa = PBXGroup;
+			children = (
+				05710227221936ED0064C3E1 /* SushiPiece.swift */,
+				0571020D2215F1400064C3E1 /* AppDelegate.swift */,
+				057102132215F1400064C3E1 /* GameScene.swift */,
+				057102152215F1400064C3E1 /* GameViewController.swift */,
+				057102172215F1400064C3E1 /* Main.storyboard */,
+				0571021A2215F1400064C3E1 /* Assets.xcassets */,
+				0571021C2215F1400064C3E1 /* LaunchScreen.storyboard */,
+				0571021F2215F1400064C3E1 /* Info.plist */,
+			);
+			path = SushiTower;
+			sourceTree = "<group>";
+		};
+		CF224D80237138A500BB49EA /* SushiTowerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				CF224D81237138A500BB49EA /* Interface.storyboard */,
+				CF224D84237138A700BB49EA /* Assets.xcassets */,
+				CF224D86237138A700BB49EA /* Info.plist */,
+			);
+			path = SushiTowerWatch;
+			sourceTree = "<group>";
+		};
+		CF224D8F237138A700BB49EA /* SushiTowerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF224D90237138A700BB49EA /* InterfaceController.swift */,
+				CF224D92237138A700BB49EA /* ExtensionDelegate.swift */,
+				CF224D94237138A800BB49EA /* Assets.xcassets */,
+				CF224D96237138A800BB49EA /* Info.plist */,
+			);
+			path = "SushiTowerWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		057102092215F1400064C3E1 /* SushiTower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057102222215F1400064C3E1 /* Build configuration list for PBXNativeTarget "SushiTower" */;
+			buildPhases = (
+				057102062215F1400064C3E1 /* Sources */,
+				057102072215F1400064C3E1 /* Frameworks */,
+				057102082215F1400064C3E1 /* Resources */,
+				CF224D9A237138A800BB49EA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF224D98237138A800BB49EA /* PBXTargetDependency */,
+			);
+			name = SushiTower;
+			productName = SushiTower;
+			productReference = 0571020A2215F1400064C3E1 /* SushiTower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF224D7E237138A500BB49EA /* SushiTowerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF224DA1237138A800BB49EA /* Build configuration list for PBXNativeTarget "SushiTowerWatch" */;
+			buildPhases = (
+				CF224D7D237138A500BB49EA /* Resources */,
+				CF224D9D237138A800BB49EA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF224D8E237138A700BB49EA /* PBXTargetDependency */,
+			);
+			name = SushiTowerWatch;
+			productName = SushiTowerWatch;
+			productReference = CF224D7F237138A500BB49EA /* SushiTowerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CF224D8A237138A700BB49EA /* SushiTowerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF224DA0237138A800BB49EA /* Build configuration list for PBXNativeTarget "SushiTowerWatch Extension" */;
+			buildPhases = (
+				CF224D87237138A700BB49EA /* Sources */,
+				CF224D88237138A700BB49EA /* Frameworks */,
+				CF224D89237138A700BB49EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SushiTowerWatch Extension";
+			productName = "SushiTowerWatch Extension";
+			productReference = CF224D8B237138A700BB49EA /* SushiTowerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		057102022215F13F0064C3E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Parrot;
+				TargetAttributes = {
+					057102092215F1400064C3E1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CF224D7E237138A500BB49EA = {
+						CreatedOnToolsVersion = 11.1;
+						ProvisioningStyle = Automatic;
+					};
+					CF224D8A237138A700BB49EA = {
+						CreatedOnToolsVersion = 11.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 057102052215F13F0064C3E1 /* Build configuration list for PBXProject "SushiTower" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 057102012215F13F0064C3E1;
+			productRefGroup = 0571020B2215F1400064C3E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				057102092215F1400064C3E1 /* SushiTower */,
+				CF224D7E237138A500BB49EA /* SushiTowerWatch */,
+				CF224D8A237138A700BB49EA /* SushiTowerWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		057102082215F1400064C3E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057102192215F1400064C3E1 /* Main.storyboard in Resources */,
+				0571021B2215F1400064C3E1 /* Assets.xcassets in Resources */,
+				0571021E2215F1400064C3E1 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF224D7D237138A500BB49EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF224D85237138A700BB49EA /* Assets.xcassets in Resources */,
+				CF224D83237138A500BB49EA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF224D89237138A700BB49EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF224D95237138A800BB49EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		057102062215F1400064C3E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057102142215F1400064C3E1 /* GameScene.swift in Sources */,
+				05710228221936ED0064C3E1 /* SushiPiece.swift in Sources */,
+				057102162215F1400064C3E1 /* GameViewController.swift in Sources */,
+				0571020E2215F1400064C3E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF224D87237138A700BB49EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF224D93237138A700BB49EA /* ExtensionDelegate.swift in Sources */,
+				CF224D91237138A700BB49EA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF224D8E237138A700BB49EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF224D8A237138A700BB49EA /* SushiTowerWatch Extension */;
+			targetProxy = CF224D8D237138A700BB49EA /* PBXContainerItemProxy */;
+		};
+		CF224D98237138A800BB49EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF224D7E237138A500BB49EA /* SushiTowerWatch */;
+			targetProxy = CF224D97237138A800BB49EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		057102172215F1400064C3E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				057102182215F1400064C3E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0571021C2215F1400064C3E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0571021D2215F1400064C3E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CF224D81237138A500BB49EA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF224D82237138A500BB49EA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		057102202215F1400064C3E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		057102212215F1400064C3E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		057102232215F1400064C3E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SushiTower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = south.SushiTower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		057102242215F1400064C3E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SushiTower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = south.SushiTower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF224D9B237138A800BB49EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SushiTowerWatch_Extension;
+				INFOPLIST_FILE = SushiTowerWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = south.SushiTower.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		CF224D9C237138A800BB49EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SushiTowerWatch_Extension;
+				INFOPLIST_FILE = SushiTowerWatch/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = south.SushiTower.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		CF224D9E237138A800BB49EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56VDVF9L2D;
+				INFOPLIST_FILE = "SushiTowerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = south.SushiTower.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		CF224D9F237138A800BB49EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56VDVF9L2D;
+				INFOPLIST_FILE = "SushiTowerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = south.SushiTower.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		057102052215F13F0064C3E1 /* Build configuration list for PBXProject "SushiTower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057102202215F1400064C3E1 /* Debug */,
+				057102212215F1400064C3E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057102222215F1400064C3E1 /* Build configuration list for PBXNativeTarget "SushiTower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057102232215F1400064C3E1 /* Debug */,
+				057102242215F1400064C3E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF224DA0237138A800BB49EA /* Build configuration list for PBXNativeTarget "SushiTowerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF224D9E237138A800BB49EA /* Debug */,
+				CF224D9F237138A800BB49EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF224DA1237138A800BB49EA /* Build configuration list for PBXNativeTarget "SushiTowerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF224D9B237138A800BB49EA /* Debug */,
+				CF224D9C237138A800BB49EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 057102022215F13F0064C3E1 /* Project object */;
+}
