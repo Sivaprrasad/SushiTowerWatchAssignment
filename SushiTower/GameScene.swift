@@ -8,8 +8,55 @@
 
 import SpriteKit
 import GameplayKit
+import WatchConnectivity
 
-class GameScene: SKScene {
+class GameScene: SKScene, WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        // Output message to terminal
+        print("WATCH: I received a message: \(message)")
+        
+        // Get the "name" key out of the dictionary
+        // and show it in the label
+        let name = message["name"] as! String
+        if(name == "left"){
+            print("TAP LEFT")
+            // 2. person clicked left, so move cat left
+            cat.position = CGPoint(x:self.size.width*0.25, y:100)
+            
+            // change the cat's direction
+            let facingRight = SKAction.scaleX(to: 1, duration: 0)
+            self.cat.run(facingRight)
+            
+            // save cat's position
+            self.catPosition = "left"
+        }
+        else if(name == "right"){
+            print("TAP RIGHT")
+            // 2. person clicked right, so move cat right
+            cat.position = CGPoint(x:self.size.width*0.85, y:100)
+            
+            // change the cat's direction
+            let facingLeft = SKAction.scaleX(to: -1, duration: 0)
+            self.cat.run(facingLeft)
+            
+            // save cat's position
+            self.catPosition = "right"
+            
+        }
+    }
+    
     
     let cat = SKSpriteNode(imageNamed: "character1")
     let sushiBase = SKSpriteNode(imageNamed:"roll")
@@ -111,9 +158,7 @@ class GameScene: SKScene {
         
         // Add this if you cannot see the chopsticks
         // sushi.zPosition = -1
-        
-       
-        
+
         
     }
     
@@ -121,6 +166,17 @@ class GameScene: SKScene {
   
     override func didMove(to view: SKView) {
         // add background
+        print("---PHONE APP LOADED!")
+        
+        // @TODO: Does the phone support communication with the watch?
+        if (WCSession.isSupported() == true) {
+            // create a communication session with the watch
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }else{print("-----")}
+        
+        
         let background = SKSpriteNode(imageNamed: "background")
         background.size = self.size
         background.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
