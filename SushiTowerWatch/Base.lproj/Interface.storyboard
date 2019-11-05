@@ -11,6 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SushiTowerWatch" customModuleProvider="target">
                     <items>
+                        <label alignment="center" text="Sushi Tower" id="XHn-Dv-wNs"/>
                         <group width="1" alignment="left" layout="vertical" id="87b-zJ-iKe">
                             <items>
                                 <button width="1" alignment="left" title="LEFT" id="NEs-JM-eoB">

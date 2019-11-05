@@ -68,6 +68,7 @@ class GameScene: SKScene, WCSessionDelegate {
         }
     }
     
+    var timer:Int = 0
     
     let cat = SKSpriteNode(imageNamed: "character1")
     let sushiBase = SKSpriteNode(imageNamed:"roll")
@@ -84,16 +85,7 @@ class GameScene: SKScene, WCSessionDelegate {
     var chopstickPositions:[String] = []
     
 //    var gameTimer: Timer?
-    var runCount = 0
-    var gameTimer = Timer.scheduledTimer(timeInterval: 25, target: self, selector: #selector(runTimer), userInfo: nil, repeats: true)
-    @objc func runTimer() {
-        print("Timer fired!")
-        self.runCount += 1
-
-        if runCount == 25 {
-            gameTimer.invalidate()
-        }
-    }
+   
     
     func animateSushi(){
         let pieceToRemove = self.sushiTower.first
