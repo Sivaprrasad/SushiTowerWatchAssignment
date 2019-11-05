@@ -41,6 +41,34 @@ class GameScene: SKScene, WCSessionDelegate {
             
             // save cat's position
             self.catPosition = "left"
+            
+            let pieceToRemove = self.sushiTower.first
+            let stickToRemove = self.chopstickGraphicsArray.first
+            
+            if (pieceToRemove != nil && stickToRemove != nil) {
+                // SUSHI: hide it from the screen & remove from game logic
+                pieceToRemove!.removeFromParent()
+                self.sushiTower.remove(at: 0)
+            
+                // STICK: hide it from screen & remove from game logic
+                stickToRemove!.removeFromParent()
+                self.chopstickGraphicsArray.remove(at:0)
+                
+                // STICK: Update stick positions array:
+                self.chopstickPositions.remove(at:0)
+                
+                // SUSHI: loop through the remaining pieces and redraw the Tower
+                for piece in sushiTower {
+                    piece.position.y = piece.position.y - SUSHI_PIECE_GAP
+                }
+                
+                // STICK: loop through the remaining sticks and redraw
+                for stick in chopstickGraphicsArray {
+                    stick.position.y = stick.position.y - SUSHI_PIECE_GAP
+                }
+                
+                self.spawnSushi();
+            }
         }
         else if(name == "right"){
             print("TAP RIGHT")
@@ -53,6 +81,35 @@ class GameScene: SKScene, WCSessionDelegate {
             
             // save cat's position
             self.catPosition = "right"
+            
+            let pieceToRemove = self.sushiTower.first
+            let stickToRemove = self.chopstickGraphicsArray.first
+            
+            if (pieceToRemove != nil && stickToRemove != nil) {
+                // SUSHI: hide it from the screen & remove from game logic
+                pieceToRemove!.removeFromParent()
+                self.sushiTower.remove(at: 0)
+            
+                // STICK: hide it from screen & remove from game logic
+                stickToRemove!.removeFromParent()
+                self.chopstickGraphicsArray.remove(at:0)
+                
+                // STICK: Update stick positions array:
+                self.chopstickPositions.remove(at:0)
+                
+                // SUSHI: loop through the remaining pieces and redraw the Tower
+                for piece in sushiTower {
+                    piece.position.y = piece.position.y - SUSHI_PIECE_GAP
+                }
+                
+                // STICK: loop through the remaining sticks and redraw
+                for stick in chopstickGraphicsArray {
+                    stick.position.y = stick.position.y - SUSHI_PIECE_GAP
+                }
+                
+                self.spawnSushi();
+            }
+
             
         }
     }
@@ -223,6 +280,7 @@ class GameScene: SKScene, WCSessionDelegate {
 
         print(mousePosition)
         
+    
         // ------------------------------------
         // MARK: UPDATE THE SUSHI TOWER GRAPHICS
         //  When person taps mouse,
@@ -253,6 +311,7 @@ class GameScene: SKScene, WCSessionDelegate {
                 stick.position.y = stick.position.y - SUSHI_PIECE_GAP
             }
         }
+        
         
         // ------------------------------------
         // MARK: SWAP THE LEFT & RIGHT POSITION OF THE CAT

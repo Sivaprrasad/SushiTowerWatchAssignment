@@ -65,6 +65,13 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     @IBAction func buttonPowerup() {
+        if (WCSession.default.isReachable == true) {
+
+            let message = ["name":"powerup"] as [String : Any]
+            
+            // Send the message
+        WCSession.default.sendMessage(message, replyHandler:nil)
+        }
         
         }
         
